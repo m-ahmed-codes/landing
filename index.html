@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <title>Landing Page</title>
+    <style>
+      /* css Default */
+      body{
+        font-family: 'Bai Jamjuree', sans-serif;
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .row {
+        display: flex;
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        align-items: center;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      /*                Banner              */
+
+      .background {
+        background-image: url("./images/bg-header-desktop.png");
+        /* background-image: ; */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom:4rem ;
+      }
+      /* .banner{
+          /* padding: 2.5rem 0rem; */
+      
+      .banner h4{
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 600;
+          padding: 1rem 0px;
+      }
+      .img-logo {
+        width: 10%;
+        display: block;
+        margin: auto;
+        padding: 1rem 0rem;
+        /* margin-top: rem ; */
+        /* margin-bottom: 2rem ; */
+      }
+      .logo{
+          padding-top:4rem ;
+      }
+      .background .row{
+          justify-content: center;
+      }
+      .banner p {
+           color : hsl(201, 11%, 66%);
+           font-size: 18px;
+           padding-bottom: 2rem ;
+           width: 70%;
+           text-align: center;
+           display: block;
+           margin: auto;
+      }
+      .btn-center{
+          text-align: center;
+      }
+      .btn1{
+          background-color:  hsl(171, 66%, 44%);
+          color: aliceblue;
+          padding: .8rem 2.5rem;
+          border-radius: 4rem;
+          border: 0px;
+          box-shadow: 0px 0px 10px hsl(171, 66%, 48%);
+          cursor: pointer;
+        }
+        .btn2{
+            background-color:  hsl(233, 100%, 69%);
+            color: aliceblue;
+            padding: .8rem 2.5rem;
+            border-radius: 4rem;
+            border: 0px;
+            box-shadow: 0px 0px 10px hsl(233, 100%, 69%);
+            cursor: pointer;
+      }
+      .btn1:hover{
+          background-color: hsl(171, 66%, 50%);
+      }
+      .btn2:hover{
+          background-color: hsl(233, 100%, 75%);
+      }
+
+      /*     Snippet */
+      .snippet h4{
+          text-align: center;
+          font-size: 1.7rem;
+          padding: 1rem;
+
+      }
+      .sec-snippet{
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+      }
+      .snippet p{
+          text-align: center;
+          color : hsl(201, 11%, 66%);
+           font-size: 18px;
+           padding-bottom: 2rem ;
+           width: 70%;
+           display: block;
+           margin: auto;
+
+      }
+      /*                 Monitor                 */
+      .monitor{
+          padding-bottom: 3rem;
+      }
+      .monitor-img{
+          width: 90%;
+      }
+      .side-text h4{
+        /* color : hsl(201, 11%, 66%); */
+           font-size: 24px;
+           padding-bottom: 1rem ;
+      }
+      .side-text p{
+        color : hsl(201, 11%, 66%);
+           font-size: 14px;
+           padding-bottom: 3rem ;
+      }
+
+
+      /*          ClipBoard                     */
+      .clip{
+          padding-top:3rem ;
+          padding-bottom: 3rem;
+      }
+      .clip .row{
+          justify-content: center;
+      }
+      .clipboard h4{
+        text-align: center;
+          font-size: 1.7rem;
+          padding: 1rem;
+      }
+      .clipboard p{
+        text-align: center;
+          color : hsl(201, 11%, 66%);
+           font-size: 18px;
+           padding-bottom: 2rem ;
+           width: 70%;
+           display: block;
+           margin: auto;
+      }
+      /*            phone         */
+      .phone-tab{
+          display: block;
+          margin: auto;
+      }
+
+      /* workflow */
+
+      .workflow h4{
+          font-size: 1.7rem;
+          padding: 1rem;
+          text-align: center;
+          /* width: 50%; */
+          display: block;
+          margin: auto;
+        
+      }
+      .workflow p{
+          text-align: center;
+          color : hsl(201, 11%, 66%);
+           font-size: 18px;
+           padding-bottom: 1rem ;
+        
+      }
+      .workflow-section .row{
+          justify-content: center;
+      }
+      .workflow-section{
+          padding-bottom: 3rem;
+      }
+
+
+      /*              Three part */
+      .blacklist{
+          width: 10%;
+          text-align: center;
+          /* margin: 1rem; */
+          margin-bottom: 2rem;
+          display: block;
+          margin: auto;
+      }
+      .box1 h4{
+          text-align: center;
+      }
+      .box1 p{
+          text-align: center;
+          color : hsl(201, 11%, 66%);
+           /* font-size: 18px; */
+           padding-bottom: 1rem ;
+           width: 80%;
+           display: block;
+           margin: auto;
+      }
+      .black-icon{
+          margin-bottom: 2rem;
+      }
+
+      .text-icon{
+          width: 13%;
+          text-align: center;
+          /* margin: 1rem; */
+          display: block;
+          margin: auto;
+      }
+      .box2 h4{
+          text-align: center;
+      }
+      .box2 p{
+          text-align: center;
+          color : hsl(201, 11%, 66%);
+           /* font-size: 18px; */
+           padding-bottom: 1rem ;
+           width: 100%;
+           
+      }
+      .icon2{
+                    margin-bottom: 2rem;
+      }
+      .icon3{
+                    margin-bottom: 2rem;
+      }
+
+      .preview-icon{
+          width: 14%;
+          text-align: center;
+          /* margin: 1rem; */
+          display: block;
+          margin: auto;
+      }
+      .box3 h4{
+          text-align: center;
+
+      }
+      .box3 p{
+          text-align: center;
+          color : hsl(201, 11%, 66%);
+           /* font-size: 18px; */
+           padding-bottom: 1rem ;
+           /* width: 100%; */
+      }
+      .row .box1 .box2 .box3{
+          text-align: center;
+          align-items: center;
+          /* width: 100%; */
+      }
+      .box1 .box2 .box3{
+          width: 100%;
+      }
+      .threepart {
+          /* justify-content: space-between; */
+          margin-bottom: 3rem;
+      }
+
+      /*          Testtimonial       */
+      .testtimonial{
+          padding: 3rem 0rem ;
+      }
+
+      /*   clip board */
+
+    .clipboard1 .row{
+          justify-content: center;
+    }
+    .clipboard1{
+        padding: 3rem 0rem;
+
+    }
+
+
+    /*         Footer       */
+
+    .footer{
+        margin-top: 3rem;
+        padding: 1rem 0rem;
+        background-color:hsl(201, 11%, 95%) ;
+    }
+
+    .img-footer{
+       width: 35%; 
+       margin-top: .4rem;
+       
+    }
+
+    .l1{
+        margin-right: 10rem;
+        /* padding-bottom: 1rem; */
+    } 
+    .l2{
+        margin-right: 4rem;
+        /* padding-bottom: 1rem; */
+    } 
+    .l4{
+        margin-right: 5.9rem;
+        margin-top: 1rem;
+    } 
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .facebook{
+        margin-right: .5rem;
+    }
+
+    
+    
+
+    .insta{
+        margin-right: .5rem;
+    }
+    a:hover{
+        color: aquamarine;
+    }
+
+
+
+    /* Media Quiries */
+
+
+    @media screen and (max-width: 768px){
+       .row{
+           flex-direction: column
+       }
+       .monitor{
+           padding: 0px;
+       }
+       .monitor-img{
+           /* text-align: center; */
+           margin-left: 2rem;
+           padding-bottom: 3rem;
+       }
+       .side-text{
+           text-align: center;
+       }
+       .side-text p{
+           padding-bottom: 1rem;
+       }
+
+       .row .img-test img{
+           padding-bottom: 2rem;
+       }
+       .clipboard1{
+           padding: 0rem 0rem;
+       }
+       .row .logo-footer{
+           text-align: center;
+       }
+       a{
+           display: block;
+           /* text-align: center; */
+           /* margin: auto; */
+       }
+       .links-3{
+           text-align: center;
+       }
+       .l1{
+           margin: 0 0;
+           padding: .3rem 0;
+       }
+       .l2{
+           margin: 0 0;
+           padding: .3rem 0;
+       }
+       .l3{
+           margin: 0 0;
+           padding: .3rem 0;
+       }
+       .l4{
+        padding: .3rem 0;
+           margin: 0 0;
+       }
+       .l5{
+        padding: .3rem 0;
+           text-align: center;
+           margin: 0 0;
+       }
+       .facebook{
+           padding-bottom:1rem ;
+       }
+       .insta{
+           padding-bottom:1rem ;
+       }
+
+    }
+
+    @media screen and (max-width: 768px){
+        .btn1{
+            margin-bottom: 1rem  ;
+        }
+    }
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- banner -->
+    <section class="background">
+      <div class="row">
+        <div class="banner">
+          <div class="logo">
+            <img class="img-logo" src="./images/logo.svg" alt="" />
+          </div>
+          <h4>A history of everything you copy</h4>
+          <p>
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+          <div class="btn-center">
+              <button class="btn1">Download for iOS</button>
+              <button class="btn2">Download for Mac</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--                        Snippet                     -->
+    <section class="sec-snippet">
+        <div class="row">
+            <div class="snippet">
+                <h4>Keep track of your snippets</h4>
+                <p>
+                    Clipboard instantly stores any item you copy in the cloud, 
+                    meaning you can access your snippets immediately on all your 
+                    devices. Our Mac and iOS apps will help you organize everything.</p>
+                </div>
+        </div>
+    </section>
+    <!--             Monitor                    -->
+    <section class="monitor">
+        <div class="row">
+            <div class="monitor-img-left">
+                <img class="monitor-img" src="./images/image-computer.png" alt="">
+            </div>
+            <div class="side-text">
+                <div class="">
+                    <h4>Quick Search</h4>
+                    <p>Easily search your snippets by content, category, web address, application, and more.
+                    </p>
+                </div>
+                <div class="">
+                    <h4>iCloud Sync</h4>
+                    <p>Instantly saves and syncs snippets across all your devices.
+                    </p>
+                </div>
+                <div class="">
+                    <h4>Complete History</h4>
+                    <p>Retrieve any snippets from the first moment you started using the app.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--              ClipBoard                 -->
+    <section class="clip">
+        <div class="row">
+            <div class="clipboard">
+                <h4>Access Clipboard anywhere</h4>
+                <p>Whether you’re on the go, or at your computer, you can access all your Clipboard 
+                    snippets in a few simple clicks.
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <!--       Phoen            -->
+    <section class="phone-section">
+        <div class="row">
+            <div class="phone-tab">
+                <img src="./images/image-devices.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- workFlow -->
+    <section class="workflow-section">
+        <div class="row">
+            <div class="workflow">
+                <h4>Supercharge your workflow</h4>
+                <p>We’ve got the tools to boost your productivity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--              threePart -->
+    <section class="threepart">
+        <div class="row">
+            <div class="box1">
+                <div class="black-icon">
+
+                    <img class="blacklist" src="./images/icon-blacklist.svg" alt="">
+                </div>
+                <h4> Create blacklists</h4>
+                <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+                </p>
+            </div>
+            <div class="box2">
+                <div class="icon2">
+
+                    <img class="text-icon" src="./images/icon-text.svg" alt="">
+                </div>
+                <h4>Plain text snippets</h4>
+                <p> Remove unwanted formatting from copied text for a consistent look.
+                </p>
+            </div>
+            <div class="box3">
+                <div class="icon3">
+                    <img class="preview-icon" src="./images/icon-preview.svg" alt="">
+                </div>
+                
+                <h4>Sneak preview</h4>
+                <p>Quick preview of all snippets on your Clipboard for easy access.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="testtimonial">
+        <div class="row">
+            <!-- <div> -->
+
+            <div class="img-test">
+                <img src="./images/logo-google.png" alt="">
+            </div>
+            <div class="img-test">
+                <img src="./images/logo-ibm.png" alt="">
+            </div>
+            <div class="img-test">
+                <img src="./images/logo-microsoft.png" alt="">
+            </div>
+            <div class="img-test">
+                <img src="./images/logo-hp.png" alt="">
+            </div>
+            <div class="img-test">
+                <img src="./images/logo-vector-graphics.png" alt="">
+            </div>
+        <!-- </div> -->
+
+        </div>
+    </section>
+
+    <!--       clipBoard      -->
+
+    <section class="clipboard1">
+        <div class="row">
+            <div class="banner">
+              <h4>Clipboard for iOS and Mac OS</h4>
+              <p>
+                Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+                and you’re ready to start adding to your clipboard.
+              </p>
+              <div class="btn-center">
+                  <button class="btn1">Download for iOS</button>
+                  <button class="btn2">Download for Mac</button>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+           <!--        footer          -->
+
+    <section class="footer">
+        <div class="row">
+                <div class="logo-footer">
+                    <img class="img-footer" src="/images/logo.svg" alt="">
+                </div>
+                <div class="row">  
+                    <div class="links">
+                        <div class="links-3">
+                            <a class="l1" href="">FAQs</a> 
+                            <a class="l2" href="">Contact Us</a>
+                            <a class="l3" href="">Install Guide</a>
+                        </div>
+                        <div class="links-2">
+                            <a class="l4" href="">Privacy Policy</a>
+                            <a class="l5" href="">Press kit</a>
+
+                        </div>
+                </div>
+                </div>
+                <!-- <div > -->
+                    <div class="facebook">
+                        <img class="face-logo" src="./images/icon-facebook.svg" alt="">
+                    </div>
+                    <div class="insta">
+                        <img src="./images/icon-instagram.svg" alt="">
+                    </div>
+                    <div class="twitter">
+                        <img src="./images/icon-twitter.svg" alt="">
+                    </div>
+                <!-- </div> -->
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
